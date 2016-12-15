@@ -1,0 +1,71 @@
+  {
+  "id":"abc...",
+  "timestamp":"2016-12-12T06:48:38.928Z",
+  "result":{
+    "source":"agent",
+    "resolvedQuery":"tomorrow at 3 pm",
+    "speech":"",
+    "action":"calc",
+    "actionIncomplete":false,
+    "parameters":{
+      "date": "{{date}}",
+      "date-time": "{{date-time}}",
+      "time": "{{time}}"
+    },
+    "contexts":[
+
+    ],
+    "metadata":{
+      "intentId":"abc...",
+      "webhookUsed":"true",
+      "webhookForSlotFillingUsed":"false",
+      "intentName":"calc"
+    },
+    "fulfillment":{
+      "speech":"You just said 2016-12-13T15:00:00Z.",
+      "messages":[
+        {
+          "type":0,
+          "speech":"You just said 2016-12-13T15:00:00Z."
+        }
+      ]
+    },
+    "score":1.0
+  },
+  "status":{
+    "code":200,
+    "errorType":"success"
+  },
+  "sessionId":"456",
+  "originalRequest":{
+    "source":"google",
+    "data":{
+      "inputs":[
+        {
+          "arguments":[
+            {
+              "raw_text":"tomorrow at 3 pm",
+              "text_value":"tomorrow at 3 pm",
+              "name":"text"
+            }
+          ],
+          "intent":"assistant.intent.action.TEXT",
+          "raw_inputs":[
+            {
+              "query":"tomorrow at 3 pm",
+              "input_type":2
+            }
+          ]
+        }
+      ],
+      "user":{
+        "user_id":"abc..."
+      },
+      "conversation":{
+        "conversation_token":"[]",
+        "conversation_id":"456",
+        "type":2
+      }
+    }
+  }
+}
